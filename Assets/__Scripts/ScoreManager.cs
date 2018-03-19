@@ -47,11 +47,11 @@ public class ScoreManager : MonoBehaviour {                 // a
 		SCORE_FROM_PREV_ROUND = 0;
 	}
 
-	public void ShareOnTwitter(){
-		string toShare = "Check out my score: "+S.score+"!";
-		Application.OpenURL(twitter + "?text="+ WWW.EscapeURL(toShare +"\n" + name));
-	
-	}
+
+
+
+
+
 
 	static public void EVENT( eScoreEvent evt) {                  // d
 		try { // try-catch stops an error from breaking your program 
@@ -101,6 +101,13 @@ public class ScoreManager : MonoBehaviour {                 // a
 			print ("score: " + S.score + " scoreRun:" + S.scoreRun + " chain:" + S.chain);//" card:"+S.gameObject);
 			break;
 		}
+	}
+
+
+	public void ShareOnTwitter(){
+		string toShare = "Check out my score: "+S.score+"!";
+		Application.OpenURL(twitter + "?text="+ WWW.EscapeURL(toShare +"\n" + name));
+
 	}
 
 	static public int CHAIN { get { return S.chain; } }             // e
