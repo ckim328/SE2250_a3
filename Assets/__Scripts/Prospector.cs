@@ -311,11 +311,19 @@ public class Prospector : MonoBehaviour {
 				validMatch = false;
 			}
 		
+
+
+
 			if (cd.color==target.color) {
 				//if the color of the card is the same color of the card, it's not valid
 				validMatch = false;
 			}
+
+
+
 			if (!validMatch) return; // return if not valid
+
+
 
 			//print the card when its played
 			print(cd);
@@ -339,44 +347,7 @@ public class Prospector : MonoBehaviour {
 	}
 
 
-	public void ShareToTwitter(){
-	
-	
-	}
-	//post score on facebook
-/*	public void PostFacebook()
-	{
-		if (!FB.IsLoggedIn)
-		{
-			FB.Login("email,publish_actions");
-		}
-		else
-		{
-			Util.Log("onShareClicked");
-			FB.Feed(
-				linkCaption: "I got to " + highScore.ToString() + "! Can you beat it?",
-			//	picture: "<INSERT A LINK TO A PICTURE HERE>",
-				linkName: "Checkout Prospector Solitaire!",
-				link: "http://apps.facebook.com/" + FB.AppId + "/?challenge_brag=" + (FB.IsLoggedIn ? FB.UserId : "guest")
-			);
-		}
-	}
 
-	void OnLoggedIn()
-	{
-		Util.Log("Logged in. ID: " + FB.UserId);
-	}
-
-	private void SetInit()
-	{
-		Util.Log("SetInit");
-		if (FB.IsLoggedIn)
-		{
-			Util.Log("Already logged in");
-			OnLoggedIn();
-		}
-	}
-*/
 
 
 	// Test whether the game is over
