@@ -599,9 +599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   share: {fileID: 0}
   name: check out Prospector Solitaire
-  descp: 
-  appLinkIOS: 
-  appLinkAndroid: 
   chain: 0
   scoreRun: 0
   score: 0
@@ -639,7 +636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67.59589, y: 121}
+  m_AnchoredPosition: {x: -81.62729, y: 121}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851986425
