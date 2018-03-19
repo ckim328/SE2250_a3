@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Prospector : MonoBehaviour {
 	static public Prospector    S;
 	private ScoreManager SM = new ScoreManager();
+	//private ScoreManager SM= gameObject.AddComponent(ScoreManager);
 
 	[Header("Set in Inspector")]
 	public TextAsset            deckXML; 
@@ -40,6 +41,7 @@ public class Prospector : MonoBehaviour {
 		S = this; // Set up a Singleton for Prospector
 		//SetInit();
 		SetUpUITexts();
+	
 	}
 
 	void SetUpUITexts() {
@@ -117,7 +119,7 @@ public class Prospector : MonoBehaviour {
 		deck = GetComponent<Deck>(); // Get the Deck
 		deck.InitDeck(deckXML.text); // Pass DeckXML to it
 		 Deck.Shuffle(ref deck.cards); // This shuffles the deck by reference // a
-
+	   // ScoreManager SM= gameObject.AddComponent(ScoreManager);
 //		Card c;
 //		for (int cNum=0; cNum<deck.cards.Count; cNum++) {                    // b
 //			c = deck.cards[cNum];
@@ -340,10 +342,8 @@ public class Prospector : MonoBehaviour {
 
 
 
-
-
 		CheckForGameOver();
-		//PostFacebook ();
+	
 	}
 
 
